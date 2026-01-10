@@ -1,2 +1,2 @@
-# cx.json
+# cxjson
 json
