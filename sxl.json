@@ -19,7 +19,7 @@
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/南风.json", "name": "线路10（南风）" },
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/js.json", "name": "线路11（JS）" },
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/py.json", "name": "线路12（PY）" }]}
-//http://tv.laohu.cool/lh260109.jar;md5;f2d196f8d411313f00000f24e257b6e6"，
+//"http://tv.laohu.cool/lh260109.jar;md5;f2d196f8d411313f00000f24e257b6e6"，
 //https://gh-proxy.com/https://raw.githubusercontent.com/2025xxx/tvtxt/refs/heads/main
 
 {
@@ -387,7 +387,8 @@
             "type": 3,
             "api": "csp_DuanJuHaoKanGuard",
             "searchable": 1,
-            "changeable": 1
+            "quickSearch": 0,
+            "filterable": 1
         },
         {
             "key": "DuanJuQiMiao",
@@ -430,10 +431,10 @@
                 "type": "rect",
                 "ratio": 1.597
             },
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0,
-            "ext": "./txt/3C3AB7A_773_ertong_20250828171550247newMediaImage.txt"
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/ls125781003/tvboxtg/refs/heads/main/%E7%8E%8B%E4%BA%8C%E5%B0%8F//txt/3C3AB7A_773_ertong_20250828171550247newMediaImage.txt"
         },
         {
             "key": "小学课堂",
@@ -447,7 +448,7 @@
             "searchable": 0,
             "quickSearch": 0,
             "changeable": 0,
-            "ext": "./txt/4A3AA71_773_xiaoxue_20250828171535645newMediaImage.txt"
+            "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/ls125781003/tvboxtg/refs/heads/main/%E7%8E%8B%E4%BA%8C%E5%B0%8F//txt/4A3AA71_773_xiaoxue_20250828171535645newMediaImage.txt"
         },
         {
             "key": "初中课堂",
@@ -461,7 +462,7 @@
             "searchable": 0,
             "quickSearch": 0,
             "changeable": 0,
-            "ext": "./txt/19B1839_773_chuzhong_20250828171521929newMediaImage.txt"
+            "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/ls125781003/tvboxtg/refs/heads/main/%E7%8E%8B%E4%BA%8C%E5%B0%8F//txt/19B1839_773_chuzhong_20250828171521929newMediaImage.txt"
         },
         {
             "key": "高中教育",
@@ -475,7 +476,7 @@
             "searchable": 0,
             "quickSearch": 0,
             "changeable": 0,
-            "ext": "./txt/345A587_773_gaozhong_20250828171449997newMediaImage.txt"
+            "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/ls125781003/tvboxtg/refs/heads/main/%E7%8E%8B%E4%BA%8C%E5%B0%8F//txt/345A587_773_gaozhong_20250828171449997newMediaImage.txt"
         },
     {
       "key": "wolongzy",
@@ -1095,6 +1096,7 @@
     }
   ]
 }
+
 
 
 
