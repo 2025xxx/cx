@@ -20,9 +20,10 @@
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/js.json", "name": "线路11（JS）" },
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/py.json", "name": "线路12（PY）" }]}
 //http://tv.laohu.cool/lh260109.jar
+//https://gh-proxy.com/https://raw.githubusercontent.com/2025xxx/tvtxt/refs/heads/main
 
 {
-  "spider": "https://gh-proxy.com/https://raw.githubusercontent.com/2025xxx/tvtxt/refs/heads/main/lh260109.jar;md5;f2d196f8d411313f00000f24e257b6e6",
+  "spider": "./lh260109.jar;md5;f2d196f8d411313f00000f24e257b6e6",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "lives": [
     {
@@ -998,6 +999,7 @@
     }
   ]
 }
+
 
 
 
