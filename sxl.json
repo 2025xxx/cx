@@ -382,6 +382,102 @@
       "ext": "7lj763gg402i7942463j9j9jg1558j9jl8g19213il86316k465719lik1585907179l13hj8h5j9j"
     },
     {
+            "key": "DuanJuHaoKan",
+            "name": "🍉短剧┃好看🍉",
+            "type": 3,
+            "api": "csp_DuanJuHaoKanGuard",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "DuanJuQiMiao",
+            "name": "🍉短剧┃小猫🍉",
+            "type": 3,
+            "api": "csp_DuanJuQiMiaoGuard",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "DuanJuHeMa",
+            "name": "🍉短剧┃小马🍉",
+            "type": 3,
+            "api": "csp_DuanJuHeMaGuard",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "DuanJuXingYa",
+            "name": "🍉短剧┃星星🍉",
+            "type": 3,
+            "api": "csp_DuanJuXingYaGuard",
+            "searchable": 1,
+            "changeable": 1
+        },
+        {
+            "key": "DuanJuSuiPian",
+            "name": "🍉短剧┃碎片🍉",
+            "type": 3,
+            "api": "csp_DuanJuSuiPianGuard",
+            "searchable": 1,
+            "changeable": 1
+        },
+    {
+            "key": "少儿教育",
+            "name": "📚少儿┃教育📚",
+            "type": 3,
+            "api": "csp_NewBiLiGuard",
+            "style": {
+                "type": "rect",
+                "ratio": 1.597
+            },
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "ext": "./txt/3C3AB7A_773_ertong_20250828171550247newMediaImage.txt"
+        },
+        {
+            "key": "小学课堂",
+            "name": "📚小学┃课堂📚",
+            "type": 3,
+            "api": "csp_NewBiLiGuard",
+            "style": {
+                "type": "rect",
+                "ratio": 1.597
+            },
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "ext": "./txt/4A3AA71_773_xiaoxue_20250828171535645newMediaImage.txt"
+        },
+        {
+            "key": "初中课堂",
+            "name": "📚初中┃课堂📚",
+            "type": 3,
+            "api": "csp_NewBiLiGuard",
+            "style": {
+                "type": "rect",
+                "ratio": 1.597
+            },
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "ext": "./txt/19B1839_773_chuzhong_20250828171521929newMediaImage.txt"
+        },
+        {
+            "key": "高中教育",
+            "name": "📚高中┃课堂📚",
+            "type": 3,
+            "api": "csp_NewBiLiGuard",
+            "style": {
+                "type": "rect",
+                "ratio": 1.597
+            },
+            "searchable": 0,
+            "quickSearch": 0,
+            "changeable": 0,
+            "ext": "./txt/345A587_773_gaozhong_20250828171449997newMediaImage.txt"
+        },
+    {
       "key": "wolongzy",
       "name": "卧龙资源",
       "type": 1,
@@ -999,6 +1095,7 @@
     }
   ]
 }
+
 
 
 
