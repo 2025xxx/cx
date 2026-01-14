@@ -19,11 +19,11 @@
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/南风.json", "name": "线路10（南风）" },
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/js.json", "name": "线路11（JS）" },
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/py.json", "name": "线路12（PY）" }]}
-//http://tv.laohu.cool/lh260109.jar
+//http://tv.laohu.cool/lh260109.jar;md5;f2d196f8d411313f00000f24e257b6e6"，
 //https://gh-proxy.com/https://raw.githubusercontent.com/2025xxx/tvtxt/refs/heads/main
 
 {
-  "spider": "./lh260109.jar;md5;f2d196f8d411313f00000f24e257b6e6",
+  "spider": "./lh260109.jar,
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "lives": [
     {
@@ -999,6 +999,7 @@
     }
   ]
 }
+
 
 
 
