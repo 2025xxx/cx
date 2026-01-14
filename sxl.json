@@ -30,15 +30,6 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-      "key": "星芽短剧",
-      "name": "星芽｜短剧",
-      "type": 3,
-      "api": "csp_AppXY",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0
-    },
-    {
       "key": "拾光",
       "name": "拾光┃秒播APP",
       "type": 3,
@@ -343,85 +334,7 @@
       "quickSearch": 0,
       "filterable": 0,
       "ext": "66666666666666661"
-    },
-    {
-            "key": "dr_兔小贝",
-            "name": "儿童┃启蒙",
-            "type": 3,
-            "api": "https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-            "ext": "https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/%E5%85%94%E5%B0%8F%E8%B4%9D.js",
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            },
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0
-        },
-        {
-            "key": "少儿教育",
-            "name": "少儿┃教育",
-            "type": 3,
-            "api": "csp_Bili",
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            },
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0,
-            "ext": {
-                "json": "https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/少儿教育.json"
-            }
-        },
-        {
-            "key": "小学课堂",
-            "name": "小学┃课堂",
-            "type": 3,
-            "api": "csp_Bili",
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            },
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0,
-            "ext": {
-                "json": "https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/小学课堂.json"
-            }
-        },
-        {
-            "key": "初中课堂",
-            "name": "初中┃课堂",
-            "type": 3,
-            "api": "csp_Bili",
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            },
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0,
-            "ext": {
-                "json": "https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/初中课堂.json"
-            }
-        },
-        {
-            "key": "高中教育",
-            "name": "高中┃课堂",
-            "type": 3,
-            "api": "csp_Bili",
-            "style": {
-                "type": "rect",
-                "ratio": 1.597
-            },
-            "searchable": 0,
-            "quickSearch": 0,
-            "changeable": 0,
-            "ext": {
-                "json": "https://ghfast.top/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/高中课堂.json"
-            }
-        }
+    }
   ],
   "parses": [
     {
@@ -699,6 +612,7 @@
     }
   ]
 }
+
 
 
 
