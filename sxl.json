@@ -6,6 +6,19 @@
 //"spider": "https://gh-proxy.com/https://github.com/lemonguo121/BoxRes/raw/main/Myuse/lib/fm.jar",
 //"spider": "https://gitee.com/ztha002/th/raw/master/ztha.jar",
 //"spider":"http://api.hgyx.vip/TVBox//MaooXB/资源包1.jar",
+//"spider": "http://home.jundie.top:81/jar/top98_1.jar",
+//{ "urls": [{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/饭太硬.json", "name": "线路1（饭太硬）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/肥猫.json", "name": "线路2（肥猫）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/夜猫子.json", "name": "线路3（夜猫子）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/运输车.json", "name": "线路4（运输车）"},
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/dxawi.json", "name": "线路5（dxawi）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/多多.json", "name": "线路6（多多）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/香雅情.json", "name": "线路7（香雅情）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/菜妮丝.json", "name": "线路8（菜妮丝）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/巧儿.json", "name": "线路9（巧儿）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/南风.json", "name": "线路10（南风）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/js.json", "name": "线路11（JS）" },
+//{ "url": "https://ghproxy.net/https://raw.githubusercontent.com/yyfxz/qqtv/main/py.json", "name": "线路12（PY）" }]}
 
 {
   "spider": "http://tv.laohu.cool/lh260109.jar;md5;f2d196f8d411313f00000f24e257b6e6",
@@ -24,6 +37,38 @@
       "name": "LIVE",
       "type": 0,
       "url": "https://gh-proxy.com/https://raw.githubusercontent.com/wwb521/live/refs/heads/main/tv.m3u",
+      "playerType": 1,
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
+      "name": "每日更新",
+      "type": 0,
+      "url": "https://cdn.jsdelivr.net/gh/zzgpy1/iptv-api/output/result.txt",
+      "playerType": 1,
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
+      "name": "ZHIBO",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt",
+      "playerType": 1,
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
+      "name": "GANGTAI",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/cloudplains/jnsj/refs/heads/main/tv202303.txt",
+      "playerType": 1,
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+     {
+      "name": "XINGANGTAI",
+      "type": 0,
+      "url": "https://ghfast.top/https://raw.githubusercontent.com/FGBLH/FG/refs/heads/main/iptvpro",
       "playerType": 1,
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
       "logo": "https://live.fanmingming.com/tv/{name}.png"
@@ -1102,6 +1147,7 @@
     }
   ]
 }
+
 
 
 
