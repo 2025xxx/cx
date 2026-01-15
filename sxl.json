@@ -90,11 +90,11 @@
             "name": "🙆┃一起┃电视",
             "api": "csp_YQKAPP",
             "type": 3,
-            "filterable": 1,
-            "playerType": 2,
+            "filterable": 0,
+            "playerType": 1,
             "quickSearch": 1,
             "searchable": 1,
-            "ext": "https://hk-api-cf.yqk5659.com"
+            "ext": ""
    },
     {
       "key": "csp_xlys",
@@ -1079,6 +1079,7 @@
     }
   ]
 }
+
 
 
 
