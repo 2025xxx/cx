@@ -86,15 +86,12 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-      "key": "Lib",
-      "name": "🌟利播┃直连",
+      "key": "新6V",
+      "name": "🌟新6V",
       "type": 3,
-      "api": "csp_Libvio",
+      "api": "csp_Xb6v",
       "searchable": 1,
-      "playerType": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "https://www.libvio.pro/"
+      "changeable": 0
     },
     {
       "key": "csp_xlys",
@@ -1079,6 +1076,7 @@
     }
   ]
 }
+
 
 
 
