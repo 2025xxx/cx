@@ -86,13 +86,16 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-      "key": "新6V",
-      "name": "🌟新6V",
-      "type": 3,
-      "api": "csp_Xb6v",
-      "searchable": 1,
-      "changeable": 0
-    },
+            "key": "YQK_spider",
+            "name": "🙆┃一起┃电视",
+            "api": "csp_YQKAPP",
+            "type": 3,
+            "filterable": 1,
+            "playerType": 2,
+            "quickSearch": 1,
+            "searchable": 1,
+            "ext": "https://hk-api-cf.yqk5659.com"
+   },
     {
       "key": "csp_xlys",
       "name": "👽修罗┃无搜索",
@@ -1076,6 +1079,7 @@
     }
   ]
 }
+
 
 
 
