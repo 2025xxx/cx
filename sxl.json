@@ -91,8 +91,9 @@
       "type": 3,
       "api": "csp_Libvio",
       "searchable": 1,
+      "playerType": 1,
       "quickSearch": 1,
-      "changeable": 1,
+      "filterable": 0,
       "ext": "https://www.libvio.pro/"
     },
     {
@@ -302,8 +303,8 @@
     {
       "key": "NoSearch_csp_DiDuan",
       "name": "🐭低端┃无搜索",
-      "type": 3,
       "api": "csp_Ddrk",
+      "type": 3,
       "searchable": 1,
       "playerType": 2,
       "quickSearch": 1,
@@ -312,12 +313,13 @@
     {
       "key": "csp_SP33",
       "name": "📺三三┃解析",
-      "type": 3,
-      "api": "csp_SP33",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 0
+       "api": "csp_SP33",
+       "type": 3,     
+       "filterable": 1,
+       "quickSearch": 1,
+       "searchable": 1,
+       "playerType": 2,
+       "ext": ""
     },
     {
       "key": "快看",
@@ -1077,6 +1079,7 @@
     }
   ]
 }
+
 
 
 
