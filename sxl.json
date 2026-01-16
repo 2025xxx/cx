@@ -322,7 +322,7 @@
        "ext": ""
     },
     {
-      "key": "快看",
+      "key": "kuai_kan",
       "name": "🚌快看┃直连",
       "type": 3,
       "api": "csp_Kuaikan",
@@ -396,14 +396,13 @@
       "ext": "7lj763gg402i7942463j9j9jg1558j9jl8g19213il86316k465719lik1585907179l13hj8h5j9j"
     },
    {
-  "key": "dbzy.tv",
-  "name": "🎬豆瓣资源",
-  "type": 1,
-  "api": "https://caiji.dbzy5.com/api.php/provide/vod/",
-  "playUrl": "",
-  "searchable": 1,
-  "quickSearch": 1,
-  "categories": [
+    "key": "dbzy.tv",
+    "name": "🎬豆瓣资源",
+    "type": 1,
+    "api": "https://caiji.dbzy5.com/api.php/provide/vod/",
+    "searchable": 1,
+    "quickSearch": 1,
+    "categories": [
     "纪录片",
     "国产剧",
     "大陆综艺",
@@ -449,12 +448,11 @@
     "电影资讯"
   ]
 }，
-    {
+  {
   "key": "tyyszy.com",
   "name": "🎬天涯影视",
   "type": 1,
   "api": "https://tyyszy.com/api.php/provide/vod/",
-  "playUrl": "",
   "searchable": 1,
   "quickSearch": 1,
   "categories": [
@@ -493,12 +491,11 @@
     "海外动漫"
   ]
 },
-    {
+  {
   "key": "iqiyizyapi.com",
   "name": "🎬-爱奇艺",
   "type": 1,
   "api": "https://iqiyizyapi.com/api.php/provide/vod/",
-  "playUrl": "",
   "searchable": 1,
   "quickSearch": 1,
   "categories": [
@@ -544,12 +541,11 @@
     "欧美综艺"
   ]
 },
-    {
+  {
   "key": "mtzy.me",
   "name": "🎬茅台资源",
   "type": 1,
   "api": "https://caiji.maotaizy.cc/api.php/provide/vod/",
-  "playUrl": "",
   "searchable": 1,
   "quickSearch": 1,
   "categories": [
@@ -597,12 +593,11 @@
     "惊悚片"
   ]
 },
-    {
+  {
   "key": "dyttzyapi.com",
   "name": "🎬电影天堂",
   "type": 1,
   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/",
-  "playUrl": "",
   "searchable": 1,
   "quickSearch": 1,
   "categories": [
@@ -1324,6 +1319,7 @@
     }
   ]
 }
+
 
 
 
