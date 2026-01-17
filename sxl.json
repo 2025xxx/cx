@@ -88,11 +88,15 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-     "key": "弹幕",
-      "name": "🅿嗷嗚弹幕┃刷新启动",
+     "key": "天天",
+      "name": "⛅天天",
       "type": 3,
-      "api": "csp_GoConfigAmnsr",
-      "jar": "https://jihulab.com/yoursmile2/TVBox/-/raw/main/custom_spider.jar"
+      "api": "csp_TTian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "7lj763gg0939791h1l3888jig44gi291li"
+      },
     {
       "key": "csp_xlys",
       "name": "👽修罗┃无搜索",
@@ -2121,6 +2125,7 @@
     }
   ]
 }
+
 
 
 
