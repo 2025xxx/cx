@@ -21,6 +21,8 @@
 //{ "url": "https://ghfast.top/https://raw.githubusercontent.com/yyfxz/qqtv/main/py.json", "name": "线路12（PY）" }]}
 //"http://tv.laohu.cool/lh260109.jar;md5;f2d196f8d411313f00000f24e257b6e6"，
 //https://gh-proxy.com/https://raw.githubusercontent.com/2025xxx/tvtxt/refs/heads/main
+//https://yparse.ik9.cc/index.php?url=
+
 
 {
   "spider": "./lh260109.jar",
@@ -37,7 +39,7 @@
         },
     {
       "name": "LIVE",
-      "type": 0,
+      "type": 2,
       "url": "https://gh-proxy.com/https://raw.githubusercontent.com/wwb521/live/refs/heads/main/tv.m3u",
       "playerType": 1,
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
@@ -86,15 +88,14 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-            "key": "YQK_spider",
-            "name": "🙆┃一起┃电视",
-            "api": "csp_YQKAPP",
-            "type": 3,
-            "filterable": 0,
-            "playerType": 1,
-            "quickSearch": 1,
-            "searchable": 1,
-            "ext": ""
+     "key": "csp_xb_lib",
+      "name": "LIB(XBiu)",
+      "type": 3,
+      "api": "csp_XBiu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": " https://www.libvio.me/type/{cateId}-{catePg}.html"
    },
     {
       "key": "csp_xlys",
@@ -2124,6 +2125,7 @@
     }
   ]
 }
+
 
 
 
