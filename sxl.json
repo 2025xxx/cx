@@ -88,14 +88,15 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-     "key": "天天",
-      "name": "⛅天天",
-      "type": 3,
-      "api": "csp_TTian",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": "7lj763gg0939791h1l3888jig44gi291li"
+     "key": "剧圈多线",
+            "name": "剧圈多线",
+            "type": 3,
+            "api": "csp_AppSxGuard",
+            "timeout": 10,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "ext": "rfOb1uAWbkRHp7hdxprGv+T3siLQwtXglSghatTiFVdOcF8X8jEp+aRrf/FNw9F962OYcJdY2CMy/nlgFeo4R9+I8K2FSnLnGP2FxOijR2T52RQ6NwQWv5XyDxPxRcMHTslu7SYeFlb8EuDsyEz4Dg=="
       },
     {
       "key": "csp_xlys",
@@ -141,12 +142,16 @@
       "ext": "7lj763gg402i79425h2384j4g949j899hll9990i9kjl6l740h1342hjlg1848401g8610h9995i998j351gl38kklkj1hkhll757010k7hji6h377ih37k060g35161jhl3i5h0l2702g7299452l4297k5697g5390lk6935k2i9g48l8j2kh27l1g014k7j9475g8"
     },
     {
-      "key": "lanyingys",
-      "name": "🍊橘子4K┃APP",
-      "type": 3,
-      "api": "csp_Qiji",
-      "playerType": 2,
-      "ext": "7lj763gg402i79425h3l90jgh14i9ijik6h8i75lj8i73l2l4k6g48lhgl2k4j3j2kik7l83gj54h687390196j0lkgg21l1i3552i7ij087ijj9258721g03lll"
+            "key": "热播多线",
+            "name": "热播多线",
+            "type": 3,
+            "api": "csp_AppTTGuard",
+            "timeout": 15,
+            "playerType": 2,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "ext": "uqGL1bNENExT7/hGxpSE5qU="
     },
     {
       "key": "kafeiys",
@@ -312,15 +317,15 @@
       "filterable": 0
     },
     {
-      "key": "csp_SP33",
-      "name": "📺三三┃解析",
-       "api": "csp_SP33",
-       "type": 3,     
-       "filterable": 1,
-       "quickSearch": 1,
-       "searchable": 1,
-       "playerType": 2,
-       "ext": ""
+            "key": "厂长秒播",
+            "name": "厂长秒播",
+            "type": 3,
+            "api": "csp_NewCzGuard",
+            "timeout": 10,
+            "playerType": 2,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1
     },
     {
       "key": "kuai_kan",
@@ -2125,6 +2130,7 @@
     }
   ]
 }
+
 
 
 
