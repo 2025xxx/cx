@@ -88,14 +88,14 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-     "key": "csp_xb_lib",
-      "name": "LIB(XBiu)",
+     "key": "csp_xb_auete",
+      "name": "AUETE(XBiu)",
       "type": 3,
       "api": "csp_XBiu",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
-      "ext": " https://www.libvio.me/type/{cateId}-{catePg}.html"
+      "ext": "http://home.jundie.top:666/json/XBiu/auete.json"
    },
     {
       "key": "csp_xlys",
@@ -2125,6 +2125,7 @@
     }
   ]
 }
+
 
 
 
