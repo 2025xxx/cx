@@ -88,12 +88,13 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-      "key": "zb",
-            "name": "直播",
-            "type": 3,
-            "api": "csp_Yj1211",
-            "searchable": 0,
-            "changeable": 0
+     "key": "豆豆",
+      "name": "豆瓣",
+      "type": 3,
+      "api": "csp_DouDou",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 0
    },
     {
       "key": "csp_xlys",
@@ -2123,6 +2124,7 @@
     }
   ]
 }
+
 
 
 
