@@ -88,14 +88,11 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-     "key": "豆豆",
-      "name": "豆瓣",
+     "key": "弹幕",
+      "name": "🅿嗷嗚弹幕┃刷新启动",
       "type": 3,
-      "api": "csp_DouDou",
-      "searchable": 0,
-      "quickSearch": 0,
-      "filterable": 0
-   },
+      "api": "csp_GoConfigAmnsr",
+      "jar": "https://jihulab.com/yoursmile2/TVBox/-/raw/main/custom_spider.jar"
     {
       "key": "csp_xlys",
       "name": "👽修罗┃无搜索",
@@ -2124,6 +2121,7 @@
     }
   ]
 }
+
 
 
 
