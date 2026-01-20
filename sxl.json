@@ -88,16 +88,16 @@
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-     "key": "剧圈多线",
-            "name": "剧圈多线",
-            "type": 3,
-            "api": "csp_AppSxGuard",
-            "timeout": 10,
-            "searchable": 1,
-            "quickSearch": 1,
-            "changeable": 1,
-            "ext": "rfOb1uAWbkRHp7hdxprGv+T3siLQwtXglSghatTiFVdOcF8X8jEp+aRrf/FNw9F962OYcJdY2CMy/nlgFeo4R9+I8K2FSnLnGP2FxOijR2T52RQ6NwQWv5XyDxPxRcMHTslu7SYeFlb8EuDsyEz4Dg=="
-      },
+      "key": "剧圈圈",
+      "name": "⭕剧圈圈",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "",
+      "click": "document.getElementById('playleft').children[0].contentWindow.document.getElementById('start').click()"
+    },
     {
       "key": "csp_xlys",
       "name": "👽修罗┃无搜索",
@@ -2130,6 +2130,7 @@
     }
   ]
 }
+
 
 
 
