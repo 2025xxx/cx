@@ -81,14 +81,14 @@
   "sites": [
     {
       "key": "俩宝",
-      "name": "📚俩宝┃天天向上",
+      "name": "📚俩宝┃好好学习",
       "type": 3,
       "api": "csp_TTian",
       "playerType": 2,
       "ext": "7lj763gg0939791h1l3888jig44gi291li"
     },
     {
-      "key": "蝴蝶",
+      "key": "蝴蝶┃天天向上",
       "name": "🦋蝴蝶",
       "type": 3,
       "api": "csp_Qiji",
@@ -98,6 +98,8 @@
       "filterable": 1,
       "ext": "7lj763gg402i79425h2384j4g949j899hll9990i9kjl6l740h1342hjlg1848401g8610h9995i998j351gl38kklkj1hkhll757010k7hji6h377ih37k060g35161jhl3i5h0l2702g7299452l4297k5697g5390lk6935k2i9g48l8j2kh27l1g014k7j9677gg"
     },
+    
+    
     {
       "key": "csp_xlys",
       "name": "👽修罗┃无搜索",
@@ -2130,6 +2132,7 @@
     }
   ]
 }
+
 
 
 
