@@ -38,7 +38,7 @@
             "logo": "https://epg.112114.xyz/logo/{name}.png"
         },
      {
-      "name": "LIVE",
+      "name": "SSM0415",
       "type": 2,
       "url": "https://gh-proxy.com/https://raw.githubusercontent.com/SSM0415/apptest/main/TVonline.txt",
       "playerType": 1,
@@ -2140,6 +2140,7 @@
     }
   ]
 }
+
 
 
 
