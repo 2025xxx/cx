@@ -37,6 +37,14 @@
             "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
             "logo": "https://epg.112114.xyz/logo/{name}.png"
         },
+     {
+      "name": "LIVE",
+      "type": 2,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/SSM0415/apptest/main/TVonline.txt",
+      "playerType": 1,
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
     {
       "name": "LIVE",
       "type": 2,
@@ -2132,6 +2140,7 @@
     }
   ]
 }
+
 
 
 
