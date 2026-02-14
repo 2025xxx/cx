@@ -89,7 +89,7 @@
      {
       "name": "XINGANGTAI",
       "type": 0,
-      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/FG/refs/heads/main/iptvpro",
+      "url": "http://iptv.4666888.xyz/FYTV.txt",
       "playerType": 1,
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
       "logo": "https://live.fanmingming.com/tv/{name}.png"
@@ -2149,6 +2149,7 @@
     }
   ]
 }
+
 
 
 
