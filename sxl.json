@@ -23,6 +23,7 @@
 //https://gh-proxy.com/https://raw.githubusercontent.com/2025xxx/tvtxt/refs/heads/main
 //https://yparse.ik9.cc/index.php?url=https://github.com/SSM0415/apptest/blob/main/18cn.json
 //https://github.com/wwb521/live/blob/main/tv.txt
+//https://feer-cdn-bp.xpnb.qzz.io/xnkl.txt
 
 
 {
@@ -49,7 +50,7 @@
     {
       "name": "FLV",
       "type": 2,
-      "url": "https://feer-cdn-bp.xpnb.qzz.io/xnkl.txt",
+      "url": "./flv.txt",
       "playerType": 1,
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
       "logo": "https://live.fanmingming.com/tv/{name}.png"
@@ -2157,6 +2158,7 @@
     }
   ]
 }
+
 
 
 
