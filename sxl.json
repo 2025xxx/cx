@@ -47,6 +47,14 @@
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
+      "name": "FLV",
+      "type": 2,
+      "url": "https://feer-cdn-bp.xpnb.qzz.io/xnkl.txt",
+      "playerType": 1,
+      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
+      "logo": "https://live.fanmingming.com/tv/{name}.png"
+    },
+    {
       "name": "LIVE",
       "type": 2,
       "url": "https://gh-proxy.com/https://raw.githubusercontent.com/wwb521/live/refs/heads/main/tv.m3u",
@@ -2149,6 +2157,7 @@
     }
   ]
 }
+
 
 
 
