@@ -1,348 +1,136 @@
-[
-  {
-  "serviceId":"http_post",
-  "name":"http post request",
-  "execType":"http",
-  "method":"post",
-  "url":"http://127.0.0.1:8181/",
-  "timeOut":300
-  },
- {
-    "name": "CVR_Read_Content",
-    "execType": "dll",
-    "serviceId": "CVR_Read_Content",
-    "method": "CVR_Read_FPContent",
-    "desc": "身分证读卡",
-    "example": "",
-    "timeOut": 1000,
-    "filePath": "Termb.dll",
-    "init": [
-      {
-        "name": "CVR_InitComm",
-        "execType": "dll",
-        "method": "CVR_InitComm",
-        "desc": "身分证读卡",
-        "example": "",
-        "excludes": [
-          "active"
-        ],
-        "filePath": "Termb.dll",
-        "useCache": false,
-        "defaultValues": {
-          "Port": 1001
-        }
-      },
-      {
-        "name": "CVR_Authenticate",
-        "execType": "dll",
-        "method": "CVR_Authenticate",
-        "desc": "身分证读卡",
-        "useCache": false,
-        "excludes": [
-          "active"
-        ],
-        "example": "",
-        "filePath": "Termb.dll"
-      }
-    ],
-    "end": [
-      {
-        "name": "CVR_CloseComm",
-        "execType": "dll",
-        "method": "CVR_CloseComm",
-        "desc": "关闭",
-        "example": "",
-        "excludes": [
-          "active"
-        ],
-        "filePath": "Termb.dll"
-      }
-    ],
-    "childNode": [
-      {
-        "execType": "dll",
-        "method": "GetPeopleAddress",
-        "desc": "地址",
-        "example": "",
-        "filePath": "Termb.dll",
-        "excludes": [
-          "active"
-        ],
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      },
-      {
-        "execType": "dll",
-        "method": "GetPeopleIDCode",
-        "desc": "身分证",
-        "example": "",
-        "filePath": "Termb.dll",
-        "excludes": [
-          "active"
-        ],
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      },
-      {
-        "execType": "dll",
-        "method": "GetPeopleBirthday",
-        "desc": "出生日期",
-        "example": "",
-        "filePath": "Termb.dll",
-        "excludes": [
-          "active"
-        ],
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      },
-      {
-        "execType": "dll",
-        "method": "GetPeopleNation",
-        "desc": "民族",
-        "example": "",
-        "filePath": "Termb.dll",
-        "excludes": [
-          "active"
-        ],
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      },
-      {
-        "execType": "dll",
-        "method": "GetPeopleSex",
-        "desc": "性别",
-        "example": "",
-        "excludes": [
-          "active"
-        ],
-        "filePath": "Termb.dll",
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      },
-      {
-        "execType": "dll",
-        "method": "GetPeopleName",
-        "desc": "姓名",
-        "example": "",
-        "filePath": "Termb.dll",
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      },
-      {
-        "execType": "dll",
-        "method": "GetDepartment",
-        "desc": "发证机关",
-        "example": "",
-        "filePath": "Termb.dll",
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      },
-      {
-        "execType": "dll",
-        "method": "GetStartDate",
-        "desc": "证件开始日期",
-        "example": "",
-        "filePath": "Termb.dll",
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      },
-      {
-        "execType": "dll",
-        "method": "GetEndDate",
-        "desc": "证件结束日期",
-        "example": "",
-        "filePath": "Termb.dll",
-        "parameters": [
-          "$out",
-          "$Limit"
-        ]
-      }
-    ]
-  }
-,
-  {
-    "name": "RsaDecrypt",
-    "execType": "dll",
-    "serviceId": "RsaDecrypt",
-    "method": "RsaDecrypt",
-    "filePath":"tongrsadec.dll", 
-	"outFormatType": "base64",
-    "outFormat": {
-      "$des": ""
-    },
-    "bigText": {
-      "$des": 500
-    },
-    "parameters": [
-	  "buf",
-      "$des"
-	]
-  } ,
-  {
-    "name": "LinkDevice",
-    "execType": "dll",
-    "serviceId": "LinkDevice",
-    "method": "LinkDevice",
-    "filePath":"UsbDxqDll_10.dll",
-    "oneThread": true,
-    "parameters": [
-      "$comType"
-    ]
-  },
-  {
-    "name": "UnlinkDevice",
-    "execType": "dll",
-    "serviceId": "UnlinkDevice",
-    "method": "UnlinkDevice",
-	"filePath":"UsbDxqDll_10.dll", 
-    "oneThread": true,
-    "useDestroy": true,
-    "parameters": [
-	]
-  },
-  {
-    "name": "PowerOn",
-    "execType": "dll",
-    "serviceId": "PowerOn",
-    "method": "PowerOn",
-    "filePath":"UsbDxqDll_10.dll", 
-	"outFormatType": "base64",
-    "oneThread": true,
-    "outFormat": {
-      "$recedata": ""
-    },
-	"bigText": {
-      "$recedata":16
-    },
-    "parameters": [
-      "$recedata",
-	  "$i$out"
-	]
-  },
-  {
-    "name": "PowerOff",
-    "execType": "dll",
-    "serviceId": "PowerOff",
-    "method": "PowerOff",
-    "filePath":"UsbDxqDll_10.dll", 
-    "outFormatType": "base64",
-    "oneThread": true,
-    "outFormat": {
-      "$recedata": ""
-    },
-	"bigText": {
-      "$recedata":16
-    },
-	"parameters": [
-      "$recedata",
-	  "$out"
-	]
-  },
-  {
-    "name": "ByteToHexStr",
-    "execType": "dll",
-    "serviceId": "ByteToHexStr",
-    "method": "ByteToHexStr",
-    "filePath":"UsbDxqDll_10.dll", 
-    "oneThread": true,
-	"bigText": {
-      "$str":2
-    },
-	"parameters": [
-      "base64data",
-	  "size",
-	  "$str"
-	]
-  },
-  {
-    "name": "HexByteToLong",
-    "execType": "dll",
-    "serviceId": "HexByteToLong",
-    "method": "HexByteToLong",
-    "filePath":"UsbDxqDll_10.dll", 
-    "oneThread": true,
-    "parameters": [
-      
-	  "base64data",
-	  "$i$tstr"
-	]
-  },
-  {
-    "name": "Authenfic1608",
-    "execType": "dll",
-    "serviceId": "Authenfic1608",
-    "method": "Authenfic1608",
-    "filePath":"UsbDxqDll_10.dll", 
-    "oneThread": true,
-    "outFormatType": "base64",
-    "outFormat": {
-      "$recedata": ""
-    },
-	"bigText": {
-      "$recedata":16
-    },
-	"parameters": [
-      "$recedata",
-	  "$i$out"
-	]
-  },
-  {
-    "name": "Chk1608Secret",
-    "execType": "dll",
-    "serviceId": "Chk1608Secret",
-    "method": "Chk1608Secret",
-    "filePath":"UsbDxqDll_10.dll", 
-    "outFormatType": "base64",
-    "oneThread": true,
-    "outFormat": {
-      "$recedata": ""
-    },
-	"bigText": {
-      "$recedata":16
-    },
-	"parameters": [
-	  "keyno",
-      "$recedata",
-	  "$i$out"
-	]
-  },
-  {
-    "name": "ReadCard",
-    "execType": "dll",
-    "serviceId": "ReadCard",
-    "method": "ReadCard",
-    "filePath":"UsbDxqDll_10.dll", 
-	"outFormatType": "base64",
-    "oneThread": true,
-    "outFormat": {
-      "$outrecedata": ""
-    },
-    "bigText": {
-      "$outrecedata": 256
-    },
-    "parameters": [
-	  "zone",
-      "addr",
-	  "len",
-	  "$outrecedata",
-	  "$i$out"
-	]
-  }
-]
-文件下载失败
+{
+"spider":"./0625.jar",
+//"spider":"https://gitee.com/junho1688/iptv-source/blob/master/tvbox/0723.jar",
+//"spider":"http://9xi4o.tk/OneClickRun/MaooXB/0625.jar",
+"sites": [ 
+{"key":"卧龙资源","name":"卧龙资源(切)","type":1,"api":"https://collect.wolongzyw.com/api.php/provide/vod/","searchable":1,"quickSearch":1},
+//{"key":"量子资源","name":"量子资源(切)","type":1,"api":"http://cj.lziapi.com/api.php/provide/vod/","searchable":1,"quickSearch":1},
+{"key":"量子资源","name":"量子资源(切)","type":1,"api":"https://cj.lziapi.com/api.php/provide/vod/","searchable":1,"quickSearch":1},
+{"key":"飞速资源","name":"飞速资源(切)","type":1,"api":"https://www.feisuzy.com/api.php/provide/vod/","searchable":0,"quickSearch":0},
+{"key":"闪电资源","name":"闪电资源(切)","type":1,"api":"http://sdzyapi.com/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable": 1,"categories":["电影","电视剧","综艺","动漫","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","欧美剧","韩剧","日剧","港剧","台剧","泰剧","纪录片","海外剧","古装仙侠","年代穿越","邵氏电影"]},
+{"key":"新浪资源","name":"新浪资源(切)","type":1,"api":"http://api.xinlangapi.com/xinlangapi.php/provide/vod/","searchable":1,"quickSearch":1},
+{"key":"百度资源","name":"百度资源(切)","type":1,"api":"https://api.apibdzy.com/api.php/provide/vod/","searchable":1,"quickSearch":1,"filterable": 1,"categories":["电影","电视剧","综艺","动漫"]},
+{"key":"天空资源","name":"天空资源(切)","type":1,"api":"https://api.tiankongapi.com/api.php/provide/vod/","searchable":0,"quickSearch":0},
+//{"key":"1080资源库","name":"1080资源库(切)","type":1,"api":"https://api.1080zyku.com/inc/api_mac10.php","searchable":0,"quickSearch":0},
+//{"key":"影图","name":"影图(聚)","type":1,"api":"https://cj.vodimg.top/api.php/provide/vod/","searchable":1,"quickSearch":1},
+//{"key":"非凡资源","name":"非凡资源(切)","type":1,"api":"http://cj.ffzyapi.com/api.php/provide/vod/","searchable":1,"quickSearch":1,"categories":["电影","电视剧","综艺","动漫","动作片","喜剧片","爱情片","科幻片","恐怖片","剧情片","战争片","国产剧","欧美剧","韩剧","日剧","港剧","台剧","泰剧","纪录片","海外剧","古装仙侠","年代穿越","邵氏电影"]},
+{"key":"暴风采集","name":"暴风影音(切)","type":1,"api":"https://app.bfzyapi.com/api.php/provide/vod/","searchable":1,"quickSearch":1},
+//{"key":"csp_Kuaikan","name":"🎈快看(SP)","type":3,"api":"csp_Kuaikan","searchable":1,"quickSearch":1,"filterable":1},
+{"key":"虎牙采集","name":"虎牙采集(切)","type":1,"api":"https://www.huyaapi.com/api.php/provide/vod/from/hym3u8/","searchable":1,"quickSearch":1},
+{"key":"火狐采集","name":"火狐采集(切)","type":1,"api":"https://hhzyapi.com/api.php/provide/vod/","searchable":1,"quickSearch":1}
+],
+"lives":[{"group":"redirect","channels":[{"name":"redirect","urls":["proxy://do=live&type=txt&ext=aHR0cHM6Ly9naXRlZS5jb20vanVuaG8xNjg4L2lwdHYtc291cmNlL3Jhdy9tYXN0ZXIvdHZib3gvbGl2ZV9jb2xsZWN0ZWRzLnR4dA=="]}]}],
+"parses":[
+{"name":"解析聚合","type":3,"url":"Demo"},
+{"name":"Json并发","type":2,"url":"Parallel"},
+{"name":"Json轮询","type":2,"url":"Sequence"},
+# type1 聚合.并发.轮询
+{"name":"Pro","type":1,"url":"http://api.vip123kan.vip/?url=","ext":{"flag":["youku","优酷","mgtv","芒果","qq","腾讯","qiyi","爱奇艺","qq","奇艺"]}},
+{"name":"bilibili","type":1,"url":"https://vip.23at.cn/home/api?type=ys&uid=4883852&key=adfimsvxzDKNOVX389&url=","ext":{"flag":["bilibili"]}},
+{"name":"leduo","type":1,"url":"https://api.ldjx.cc/wp-api/getvodurl.php?token=1001&vid=","ext":{"flag":["leduo"]}},
+{"name":"duoduozy2","type":1,"url":"https://a.dxzj88.com/jxjx/dd.php?url=","ext":{"flag":["duoduozy"]}},
+{"name":"renrenmi2","type":1,"url":"https://a.dxzj88.com/jxrrm/jiami.php?url=","ext":{"flag":["renrenmi"]}},
+{"name":"renrenmi3","type":1,"url":"https://sz.dxzj88.com/jxrjrm/jiaomi.php?url=","ext":{"flag":["renrenmi"]}},
+{"name":"Pro2","type":1,"url":"https://vip.rongxingvr.top/api/?type=ys&key=JJEZkZIhzkA4cUtBfR&url=","ext":{"flag":["ltnb","rx","qiyi","爱奇艺","qq","奇艺","sohu","letv","youku","优酷","mgtv","芒果"]}},
+{"name":"2","type":1,"url":"https://jx.mczdyw.com/xg.php?url=","ext":{"flag":["mgtv","芒果"]}},
+{"name":"3","type":1,"url":"https://www.aiaine.com/api/?key=kVqmG5dAQ5dZTcECw8&url=","ext":{"flag":["youku","优酷","mgtv","芒果","qq","腾讯","qiyi","爱奇艺","qq","奇艺"]}},
+{"name":"4","type":1,"url":"https://svip.rongxingvr.top/api/?key=niBgMGXVdCQhsmeEBK&url=","ext":{"flag":["youku","优酷","mgtv","芒果","qq","腾讯","qiyi","爱奇艺","qq","奇艺"]}},
+{"name":"8","type":1,"url":"https://app.iminna.com/jx/?url=","ext":{"flag":["youku","优酷","mgtv","芒果","qq","腾讯","qiyi","爱奇艺","qq","奇艺"]}},
+{"name":"初心影视1","type":1,"url":"http://jhpc.manduhu.com/j1217.php?url=","ext":{"flag":["youku","优酷","qq","腾讯","mgtv","芒果"]}},
+{"name":"飓风影院2","type":1,"url":"https://vvip.funsline.cn/api/?key=3xWfEoDf4V9p9Y20CR&url=","ext":{"flag":["ziqie","youku","优酷","qiyi","爱奇艺","奇艺","mgtv","芒果","qq","腾讯"]}},
+{"name":"我爱电影网","type":1,"url":"https://jhpc.manduhu.com/j1217.php?url=","ext":{"flag":["qiyi","爱奇艺","奇艺","mgtv","芒果","youku","优酷","pptv","PPTV"]}},
+{"name":"初心影视9","type":1,"url":"https://api.m3u8.tv:5678/home/api?type=ys&uid=1931000&key=gktuvyzABEORSYZ135&url=","ext":{"flag":["youku","优酷","qq","腾讯","mgtv","芒果"]}},
+{"name":"江湖解析","type":1,"url":"http://103.40.240.46/jh/?url=","ext":{"flag":["renrenmi","qq","腾讯","youku","优酷","mgtv","芒果","xigua","西瓜"]}},
+{"name":"王牌","type":1,"url":"https://za.kuanjv.com/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","搜狐","sohu","letv","乐视","bilibili","哔哩哔哩","哔哩","xigua","西瓜"]}},
+{"name":"我爱电影网","type":1,"url":"https://jhpc.manduhu.com/j1217.php?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","乐视","letv","PPTV","pptv","bilibili","哔哩哔哩","哔哩"]}},
+{"name":"盘古解析","type":1,"url":"https://json.pangujiexi.com:12345/json.php?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果"]}},
+{"name":"欢雨","type":1,"url":"http://www.youhuifuligou.com/json/?id=7&url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","letv","乐视","xigua","西瓜"]}},
+{"name":"hfyrw","type":1,"url":"https://json.hfyrw.com/mao.go?url=","ext":{"flag":["ltnb","renrenmi"]}},
+{"name":"aiaine02","type":1,"url":"https://vip.aiaine.com/api/?key=8FN8gNAySnvJiMllxZ&url=","ext":{"flag":["ltnb","renrenmi","xfyun","miaoparty","miaoparty2","miaoparty3","longteng","xueren"]}},
+{"name":"五一解析","type":1,"url":"https://json.5lp.net/json.php?url=","ext":{"flag":["ltnb","renrenmi","rx","rongxing"]}},
+{"name":"RongXingVR","type":1,"url":"https://vip.rongxingvr.top/api/?key=JJEZkZIhzkA4cUtBfR&url=","ext":{"flag":["renrenmi","rx","rongxing","mgtv","芒果","bilibili","哔哩哔哩","哔哩"]}},
+{"name":"jx165","type":1,"url":"https://ltjx.kuaixiao.vip/home/api?type=ys&uid=506916&key=dlmpwBHIKLMPQRVW23&url=","ext":{"flag":["ltnb"]}},
+{"name":"jx36","type":1,"url":"https://api.m3u8.tv:5678/home/api?type=ys&uid=9105801&key=huwxFGILMOQSTUZ679&url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果"]}},
+{"name":"J13","type":1,"url":"https://languangyingshiziyuan.1080zy.top/longtengzy.php/?url=","ext":{"flag":["ltnb"]}},
+{"name":"xfyun云","type":1,"url":"https://vip.xfyun.one/home/api?type=ys&uid=2581923&key=ceijpquvBMOSUVXZ23&url=","ext":{"flag":["xfyun"]}},
+{"name":"Wuduzy","type":1,"url":"https://aa.xkys.tv/json.php?url=","ext":{"flag":["wuduzy"]}},
+{"name":"LTRX","type":1,"url":"https://svip.spchat.top/api/?type=ys&key=bKemW41JnxmQb4l67h&url=","ext":{"flag":["rx"]}},
+{"name":"喵派对资源3","type":1,"url":"https://vip.aiaine.com/api/?key=fOWaGgFU45zlIjvbHI&url=","ext":{"flag":["ltnb","renrenmi"]}},
+{"name":"喵派对资源2","type":1,"url":"https://svip.iremind.me/api/?key=A5Db8HF8c8FSIOR6R1&url=","ext":{"flag":["renrenmi","qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","bilibili","哔哩哔哩","哔哩","sohu"]}},
+{"name":"leduotv","type":1,"url":"https://api.leduotv.com/wp-api/getvodurl.php?vid=","ext":{"flag":["leduo"]}},
+# type0 手动解析
+{"name":"OJBK","type":0,"url":"https://jmwl.qd234.cn/v/?v=","ext":{"flag":["ltnb","renrenmi","rx","xfyun","muxm3u8","xigua","xueren","qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","bilibili","哔哩哔哩","哔哩","pptv","PPTV","sohu","letv"]}},
+{"name":"M117","type":0,"url":"http://1.117.152.239:39000/?url="},
+{"name":"zui","type":0,"url":"https://jx.zui.cm/?url=","ext":{"flag":["ltnb"]}},
+{"name":"parwix1","type":0,"url":"https://jx.parwix.com:4433/player/?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"]}},
+{"name":"parwix2","type":0,"url":"https://jx.parwix.com:4433/player/analysis.php?v=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","letv","乐视","pptv","PPTV","sohu","bilibili","哔哩哔哩","哔哩"]}},
+{"name":"xuerenweb","type":0,"url":"https://s.2tu.uk/?url=","ext":{"flag":["xueren"]}},
+{"name":"xuerenweb2","type":0,"url":"https://xrm3u8.qd234.cn/?url=","ext":{"flag":["xueren"]}},
+{"name":"美剧虫","type":0,"url":"https://jx.daiguaji.com/?url=","ext":{"flag":["zijian"]}},
+{"name":"miao","type":0,"url":"https://jx.58g8.com/1/?url=","ext":{"flag":["miaoparty"]}},
+{"name":"web1","type":0,"url":"https://www.nxflv.com/?url=","ext":{"flag":["youku","优酷","mgtv","芒果","qq","腾讯","qiyi","爱奇艺","qq","奇艺","sohu","letv"]}},
+{"name":"万能解析","type":0,"url":"https://vip.legendwhb.cn/m3u8.php?url=","ext":{"flag":["ltnb","renrenmi","qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","bilibili","哔哩哔哩","哔哩"]}},
+{"name":"万能解析2","type":1,"url":"https://video.isyour.love/player/getplayer?url="},
+{"name":"ltnb04","type":0,"url":"https://vip.bljiex.com/?v=","ext":{"flag":["ltnb"]}},
+{"name":"ltnb02","type":0,"url":"https://jx.zui.cm/?url=","ext":{"flag":["ltnb"]}},
+{"name":"CL4K01","type":0,"url":"https://ys.ling00.cn/CL4K/?url=","ext":{"flag":["CL4K","qq","腾讯"]}},
+{"name":"CL4K02","type":0,"url":"https://app.okmedcos.com/4k/?url=","ext":{"flag":["CL4K","qq","腾讯","pptv","PPTV"]}},
+# type0 手动解析1126
+{ "name": "虾米解析","type": 0, "url": "https://jx.xmflv.com/?url="},
+{"ext": {"header": {"referer": "https://jiejie.uk/","user-agent": "Mozilla/5.0 (Linux; Android 13; V2049A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/116.0.0.0 Mobile Safari/537.36"}}, "name": "爱豆","type": 0,"url": "https://jx.aidouer.net/?url="},
+{"name": "superso", "type": 0,"url": "https://jx.jsonplayer.com/player/?url="}, 
+{"name": "夜幕解析","type": 0, "url": "https://www.yemu.xyz/?url="},
+{"name": "777","type": 0,"url": "https://jx.777jiexi.com/player/?url="},
+{"name":"万能解析","type":0,"url":"https://vip.legendwhb.cn/m3u8.php?url=","ext":{"flag":["ltnb","renrenmi","qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","mgtv","芒果","bilibili","哔哩哔哩","哔哩"]}},
+{"name":"你爱解析","type":0,"url":"https://video.isyour.love/player/getplayer?url="},
+{"name":"云解析","type":0,"url":"https://jx.yparse.com/index.php?url=","ext":{"header":{"user-agent":"Mozilla/5.0(Linux;Android13;V2049ABuild/TP1A.220624.014;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/116.0.0.0MobileSafari/537.36"}}},
+{"name":"m3u8","type":0,"url":"https://jx.m3u8.tv/jiexi/?url="},
+{"name": "jx","type": 0,"url": "https://jx.m3u8.tv/jx/jx.php?url="},
+{"name":"咸鱼云解析","type":0,"url":"https://jx.xymp4.cc/?url=","ext":{"header":{"user-agent":"Mozilla/5.0(Linux;Android13;V2049ABuild/TP1A.220624.014;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/116.0.0.0MobileSafari/537.36","referer":"https://www.xyflv.cc/"}}},
+{"name":"全民","url":"http://api.wpsseo.cn/?v=","type":0,"ext":{"flag":["qiyi","imgo","爱奇艺","奇艺","qq","腾讯","youku","优酷","pptv","PPTV","letv","乐视","leshi","bilibili","哔哩哔哩","哔哩","mgtv","芒果","sohu","xigua","fun","风行"],"header":{"User-Agent":"Mozilla/5.0"}},"header":{"User-Agent":"Mozilla/5.0"}},
+{"name": "HY影视999","type": 0,"url": "https://huayong.net/999/?v="},
+{"name": "HY影视jx5","type": 0,"url": "https://huayong.net/jx5/?url="},
+{"name": "HY影视vip4","type": 0,"url": "https://huayong.net/vip4/?url="},
+{"name": "宝片","type": 0,"url": "https://wuzei.serv00.net/jx/kk.php?url="}
+//,
+//测试lzm3u8去广告接口
+// {"name":"lzqgg","type":0,"url":"https://huayong.net/vip4/?url=https://api.allorigins.win/raw?url=https://www.top99.icu/getFilteredAd?url_param=","ext":{"flag":["lzm3u8"]}},
+// {"name": "HY影视jx555","type": 0,"url": "https://huayong.net/jx5/?url=https://api.allorigins.win/raw?url=https://www.top99.icu/getFilteredAd?url_param=","ext":{"flag":["lzm3u8"]}}
+],
+"flags":["youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu","bilibili","renrenmi","优酷","芒果","腾讯","爱奇艺","奇艺","ltnb","rx","CL4K","xfyun","wuduzy","lzm3u8"],
+"ijk":[
+{"group":"软解码","options":[
+{"category":4,"name":"opensles","value":"0"},
+{"category":4,"name":"overlay-format","value":"842225234"},
+{"category":4,"name":"framedrop","value":"1"},
+{"category":4,"name":"soundtouch","value":"1"},
+{"category":4,"name":"start-on-prepared","value":"1"},
+{"category":1,"name":"http-detect-range-support","value":"0"},
+{"category":1,"name":"fflags","value":"fastseek"},
+{"category":2,"name":"skip_loop_filter","value":"48"},
+{"category":4,"name":"reconnect","value":"1"},
+{"category":4,"name":"enable-accurate-seek","value":"0"},
+{"category":4,"name":"mediacodec","value":"0"},
+{"category":4,"name":"mediacodec-auto-rotate","value":"0"},
+{"category":4,"name":"mediacodec-handle-resolution-change","value":"0"},
+{"category":4,"name":"mediacodec-hevc","value":"0"},
+{"category":1,"name":"dns_cache_timeout","value":"600000000"}
+]},
+{"group":"硬解码","options":[
+{"category":4,"name":"opensles","value":"0"},
+{"category":4,"name":"overlay-format","value":"842225234"},
+{"category":4,"name":"framedrop","value":"1"},
+{"category":4,"name":"soundtouch","value":"1"},
+{"category":4,"name":"start-on-prepared","value":"1"},
+{"category":1,"name":"http-detect-range-support","value":"0"},
+{"category":1,"name":"fflags","value":"fastseek"},
+{"category":2,"name":"skip_loop_filter","value":"48"},
+{"category":4,"name":"reconnect","value":"1"},
+{"category":4,"name":"enable-accurate-seek","value":"0"},
+{"category":4,"name":"mediacodec","value":"1"},
+{"category":4,"name":"mediacodec-auto-rotate","value":"1"},
+{"category":4,"name":"mediacodec-handle-resolution-change","value":"1"},
+{"category":4,"name":"mediacodec-hevc","value":"1"},
+{"category":1,"name":"dns_cache_timeout","value":"600000000"}
+]}]
+}
