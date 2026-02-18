@@ -104,6 +104,24 @@
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
+      "name": "港台IPTV",
+      "type": 0,
+      "url": "./iptv.txt",
+      "playerType": 2,
+      "ua": "okhttp/3",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
+      "name": "全FLV",
+      "type": 0,
+      "url": "./flv.txt",
+      "playerType": 2,
+      "ua": "okhttp/3",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
       "name": "GGGG",
       "type": 0,
       "url": "http://rihou.cc:555/gggg.nzk",
@@ -2202,6 +2220,7 @@
     }
   ]
 }
+
 
 
 
