@@ -1,0 +1,348 @@
+[
+  {
+  "serviceId":"http_post",
+  "name":"http post request",
+  "execType":"http",
+  "method":"post",
+  "url":"http://127.0.0.1:8181/",
+  "timeOut":300
+  },
+ {
+    "name": "CVR_Read_Content",
+    "execType": "dll",
+    "serviceId": "CVR_Read_Content",
+    "method": "CVR_Read_FPContent",
+    "desc": "身分证读卡",
+    "example": "",
+    "timeOut": 1000,
+    "filePath": "Termb.dll",
+    "init": [
+      {
+        "name": "CVR_InitComm",
+        "execType": "dll",
+        "method": "CVR_InitComm",
+        "desc": "身分证读卡",
+        "example": "",
+        "excludes": [
+          "active"
+        ],
+        "filePath": "Termb.dll",
+        "useCache": false,
+        "defaultValues": {
+          "Port": 1001
+        }
+      },
+      {
+        "name": "CVR_Authenticate",
+        "execType": "dll",
+        "method": "CVR_Authenticate",
+        "desc": "身分证读卡",
+        "useCache": false,
+        "excludes": [
+          "active"
+        ],
+        "example": "",
+        "filePath": "Termb.dll"
+      }
+    ],
+    "end": [
+      {
+        "name": "CVR_CloseComm",
+        "execType": "dll",
+        "method": "CVR_CloseComm",
+        "desc": "关闭",
+        "example": "",
+        "excludes": [
+          "active"
+        ],
+        "filePath": "Termb.dll"
+      }
+    ],
+    "childNode": [
+      {
+        "execType": "dll",
+        "method": "GetPeopleAddress",
+        "desc": "地址",
+        "example": "",
+        "filePath": "Termb.dll",
+        "excludes": [
+          "active"
+        ],
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      },
+      {
+        "execType": "dll",
+        "method": "GetPeopleIDCode",
+        "desc": "身分证",
+        "example": "",
+        "filePath": "Termb.dll",
+        "excludes": [
+          "active"
+        ],
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      },
+      {
+        "execType": "dll",
+        "method": "GetPeopleBirthday",
+        "desc": "出生日期",
+        "example": "",
+        "filePath": "Termb.dll",
+        "excludes": [
+          "active"
+        ],
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      },
+      {
+        "execType": "dll",
+        "method": "GetPeopleNation",
+        "desc": "民族",
+        "example": "",
+        "filePath": "Termb.dll",
+        "excludes": [
+          "active"
+        ],
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      },
+      {
+        "execType": "dll",
+        "method": "GetPeopleSex",
+        "desc": "性别",
+        "example": "",
+        "excludes": [
+          "active"
+        ],
+        "filePath": "Termb.dll",
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      },
+      {
+        "execType": "dll",
+        "method": "GetPeopleName",
+        "desc": "姓名",
+        "example": "",
+        "filePath": "Termb.dll",
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      },
+      {
+        "execType": "dll",
+        "method": "GetDepartment",
+        "desc": "发证机关",
+        "example": "",
+        "filePath": "Termb.dll",
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      },
+      {
+        "execType": "dll",
+        "method": "GetStartDate",
+        "desc": "证件开始日期",
+        "example": "",
+        "filePath": "Termb.dll",
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      },
+      {
+        "execType": "dll",
+        "method": "GetEndDate",
+        "desc": "证件结束日期",
+        "example": "",
+        "filePath": "Termb.dll",
+        "parameters": [
+          "$out",
+          "$Limit"
+        ]
+      }
+    ]
+  }
+,
+  {
+    "name": "RsaDecrypt",
+    "execType": "dll",
+    "serviceId": "RsaDecrypt",
+    "method": "RsaDecrypt",
+    "filePath":"tongrsadec.dll", 
+	"outFormatType": "base64",
+    "outFormat": {
+      "$des": ""
+    },
+    "bigText": {
+      "$des": 500
+    },
+    "parameters": [
+	  "buf",
+      "$des"
+	]
+  } ,
+  {
+    "name": "LinkDevice",
+    "execType": "dll",
+    "serviceId": "LinkDevice",
+    "method": "LinkDevice",
+    "filePath":"UsbDxqDll_10.dll",
+    "oneThread": true,
+    "parameters": [
+      "$comType"
+    ]
+  },
+  {
+    "name": "UnlinkDevice",
+    "execType": "dll",
+    "serviceId": "UnlinkDevice",
+    "method": "UnlinkDevice",
+	"filePath":"UsbDxqDll_10.dll", 
+    "oneThread": true,
+    "useDestroy": true,
+    "parameters": [
+	]
+  },
+  {
+    "name": "PowerOn",
+    "execType": "dll",
+    "serviceId": "PowerOn",
+    "method": "PowerOn",
+    "filePath":"UsbDxqDll_10.dll", 
+	"outFormatType": "base64",
+    "oneThread": true,
+    "outFormat": {
+      "$recedata": ""
+    },
+	"bigText": {
+      "$recedata":16
+    },
+    "parameters": [
+      "$recedata",
+	  "$i$out"
+	]
+  },
+  {
+    "name": "PowerOff",
+    "execType": "dll",
+    "serviceId": "PowerOff",
+    "method": "PowerOff",
+    "filePath":"UsbDxqDll_10.dll", 
+    "outFormatType": "base64",
+    "oneThread": true,
+    "outFormat": {
+      "$recedata": ""
+    },
+	"bigText": {
+      "$recedata":16
+    },
+	"parameters": [
+      "$recedata",
+	  "$out"
+	]
+  },
+  {
+    "name": "ByteToHexStr",
+    "execType": "dll",
+    "serviceId": "ByteToHexStr",
+    "method": "ByteToHexStr",
+    "filePath":"UsbDxqDll_10.dll", 
+    "oneThread": true,
+	"bigText": {
+      "$str":2
+    },
+	"parameters": [
+      "base64data",
+	  "size",
+	  "$str"
+	]
+  },
+  {
+    "name": "HexByteToLong",
+    "execType": "dll",
+    "serviceId": "HexByteToLong",
+    "method": "HexByteToLong",
+    "filePath":"UsbDxqDll_10.dll", 
+    "oneThread": true,
+    "parameters": [
+      
+	  "base64data",
+	  "$i$tstr"
+	]
+  },
+  {
+    "name": "Authenfic1608",
+    "execType": "dll",
+    "serviceId": "Authenfic1608",
+    "method": "Authenfic1608",
+    "filePath":"UsbDxqDll_10.dll", 
+    "oneThread": true,
+    "outFormatType": "base64",
+    "outFormat": {
+      "$recedata": ""
+    },
+	"bigText": {
+      "$recedata":16
+    },
+	"parameters": [
+      "$recedata",
+	  "$i$out"
+	]
+  },
+  {
+    "name": "Chk1608Secret",
+    "execType": "dll",
+    "serviceId": "Chk1608Secret",
+    "method": "Chk1608Secret",
+    "filePath":"UsbDxqDll_10.dll", 
+    "outFormatType": "base64",
+    "oneThread": true,
+    "outFormat": {
+      "$recedata": ""
+    },
+	"bigText": {
+      "$recedata":16
+    },
+	"parameters": [
+	  "keyno",
+      "$recedata",
+	  "$i$out"
+	]
+  },
+  {
+    "name": "ReadCard",
+    "execType": "dll",
+    "serviceId": "ReadCard",
+    "method": "ReadCard",
+    "filePath":"UsbDxqDll_10.dll", 
+	"outFormatType": "base64",
+    "oneThread": true,
+    "outFormat": {
+      "$outrecedata": ""
+    },
+    "bigText": {
+      "$outrecedata": 256
+    },
+    "parameters": [
+	  "zone",
+      "addr",
+	  "len",
+	  "$outrecedata",
+	  "$i$out"
+	]
+  }
+]
+文件下载失败
