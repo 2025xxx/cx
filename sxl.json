@@ -106,7 +106,7 @@
     {
       "name": "港台IPTV",
       "type": 0,
-      "url": "./iptv.txt",
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/FGBLH/FG/refs/heads/main/iptvpro.txt",
       "playerType": 2,
       "ua": "okhttp/3",
       "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
@@ -2220,6 +2220,7 @@
     }
   ]
 }
+
 
 
 
