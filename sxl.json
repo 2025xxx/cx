@@ -491,7 +491,19 @@
       "filterable": 1,
       "ext": "7lj763gg402i7942463j9j9jg1558j9jl8g19213il86316k465719lik1585907179l13hj8h5j9j"
     },
-   
+   {
+			"key": "FirstAid",
+			"name": "🚑 急救知识 ",
+			"type": 3,
+			"api": "csp_FirstAid",
+			"searchable": 0,
+			"quickSearch": 0,
+			"changeable": 0,
+			"style": {
+				"type": "rect",
+				"ratio": 3.8
+			}
+		},
     {
       "key": "wolongzy",
       "name": "🎶卧龙资源",
@@ -2220,6 +2232,7 @@
     }
   ]
 }
+
 
 
 
